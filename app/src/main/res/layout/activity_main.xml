@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Book for\nevery taste."
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+    <Button
+        android:backgroundTint="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/TextView1"
+        android:id="@+id/Login"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_arrow_forward_black"/>
+
+
+    <Button
+        android:backgroundTint="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/signup"
+        android:layout_below="@+id/Login"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_arrow_forward_white"/>
+
+</RelativeLayout>
