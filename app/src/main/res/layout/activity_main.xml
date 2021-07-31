@@ -7,19 +7,20 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
         android:id="@+id/TextView1"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:text="Book for\nevery taste."
-        android:textSize="30dp"
+        android:textSize="35dp"
         android:textStyle="bold"
         android:textColor="@color/black"
         />
 
 
     <Button
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/matt_white"
         android:layout_centerInParent="true"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/TextView1"
@@ -32,7 +33,7 @@
 
 
     <Button
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/signup"
         android:layout_centerInParent="true"
         android:layout_marginTop="15dp"
         android:id="@+id/signup"
@@ -40,7 +41,7 @@
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:text="SIGN UP"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:drawableEnd="@drawable/ic_arrow_forward_white"/>
 
 </RelativeLayout>

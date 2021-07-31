@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BookApp">
+        <activity android:name=".Dashboard.UserDashboard"></activity>
+        <activity android:name=".OnBoarding.OnBoardingScreen" />
+        <activity android:name=".Authentication.SignUpActivity" />
+        <activity android:name=".Authentication.LoginActivity" />
         <activity android:name=".SplashScreen.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,9 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"/>
-
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

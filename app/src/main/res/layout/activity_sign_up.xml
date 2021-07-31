@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.SignUpActivity">
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Create new Account"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_below="@+id/logo_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/FullName"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Full Name"
+            android:textColor="@color/grey"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:background="@drawable/edit_text"/>
+
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/Phone"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Phone"
+            android:textColor="@color/grey"
+            android:inputType="phone"
+            android:paddingStart="15dp"
+            android:background="@drawable/edit_text"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/Mail"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center"
+            android:text="Mail"
+            android:textColor="@color/grey"
+            android:paddingStart="15dp"
+            android:background="@drawable/edit_text"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/Rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="By creating an account you agree to our"
+                android:textSize="16sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/base"
+                    android:text="Terms of Service"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/and"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="and"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="PrivacyPolicy"
+                    android:textColor="@color/base"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <Button
+                android:backgroundTint="@color/signup"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/Next"
+                android:layout_below="@+id/LL"
+                android:layout_width="330dp"
+                android:layout_height="65dp"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:drawableEnd="@drawable/ic_arrow_forward_white"/>
+
+            <LinearLayout
+                android:layout_below="@+id/Next"
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Already a member ?"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/Login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="LOGIN"
+                    android:textColor="@color/base"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
