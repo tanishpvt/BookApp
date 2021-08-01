@@ -1,51 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="2dp"
     app:cardElevation="8dp">
 
     <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="395dp"
         android:padding="10dp">
 
         <ImageView
             android:id="@+id/mv_image"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_width="160dp"
+            android:layout_height="262dp"
             android:scaleType="fitXY"/>
 
         <TextView
             android:id="@+id/mv_title"
+            android:layout_toRightOf="@+id/mv_image"
+            android:layout_marginLeft="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="McDonald's"
-            android:layout_toRightOf="@+id/mv_image"
-            android:layout_marginLeft="10dp"
+            android:text="The Gravity of us"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
 
-        <RatingBar
-            android:id="@+id/mv_rating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:rating="3.5"
-            style="@style/Widget.AppCompat.RatingBar.Small"
-            android:layout_below="@id/mv_title"
-            android:layout_toRightOf="@+id/mv_image"
-            android:layout_marginLeft="10dp"/>
+<!--        <RatingBar-->
+<!--            android:id="@+id/mv_rating"-->
+<!--            android:layout_below="@+id/mv_desc"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:rating="3.5"-->
+<!--            style="@style/Widget.AppCompat.RatingBar.Small"/>-->
+
+
+                <TextView
+                    android:id="@+id/mv_rating"
+                    android:layout_below="@+id/mv_desc"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/mv_image"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="4.5 ⭐"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
 
         <TextView
+            android:layout_marginLeft="12dp"
             android:id="@+id/mv_desc"
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:text="by Phil Stamper"
+            android:layout_toRightOf="@+id/mv_image"
+            android:layout_below="@+id/mv_title"/>
+
+
+        <TextView
+            android:id="@+id/mv_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This place is very nice evry one should visit this place high quality food"
-            android:layout_below="@+id/mv_rating"
-            android:layout_toRightOf="@+id/mv_image"
-            android:padding="10dp"/>
+            android:text="₹ 450"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/mv_desc"
+            android:layout_toEndOf="@id/mv_rating"/>
 
 
     </RelativeLayout>
 
-</androidx.cardview.widget.CardView>
+</RelativeLayout>

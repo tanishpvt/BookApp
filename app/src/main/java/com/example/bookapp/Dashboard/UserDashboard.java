@@ -3,38 +3,24 @@ package com.example.bookapp.Dashboard;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import com.example.bookapp.Fragment.HomeFragment;
-import com.example.bookapp.HomeAdapter.CatogeriesAdapter;
-import com.example.bookapp.HomeAdapter.CatogeriesHelperClass;
-import com.example.bookapp.HomeAdapter.FeaturedAdpater;
-import com.example.bookapp.HomeAdapter.FeaturedHelperClass;
-import com.example.bookapp.HomeAdapter.MostViewHelperClass;
-import com.example.bookapp.HomeAdapter.MostViewedAdpater;
 import com.example.bookapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.util.ArrayList;
-
 public class UserDashboard extends AppCompatActivity {
 
 
 
     BottomNavigationView bottomNavigationView;
-    Fragment selectedFragment=null;
+    Fragment selectedFragment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_dashboard);
 
-        bottomNavigationView =findViewById(R.id.bottom_navigation);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemReselectedListener);
 
@@ -79,8 +65,6 @@ public class UserDashboard extends AppCompatActivity {
                     if(selectedFragment !=null){
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                     }
-
-
 
                     return true;
                 }
