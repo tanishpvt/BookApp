@@ -36,6 +36,8 @@ public class CatogeriesAdapter extends RecyclerView.Adapter<CatogeriesAdapter.Ca
         CatogeriesHelperClass catogeriesHelperClass = catogeriesLocations.get(position);
         holder.image.setImageResource(catogeriesHelperClass.getImage());
         holder.title.setText(catogeriesHelperClass.getTitle());
+        holder.desc.setText(CatogeriesHelperClass.getDescription());
+
 
 
     }
@@ -48,13 +50,15 @@ public class CatogeriesAdapter extends RecyclerView.Adapter<CatogeriesAdapter.Ca
     public static class CatogeriesViewHolder extends RecyclerView.ViewHolder {
 
         ImageView image;
-        TextView title;
+        TextView title,desc;
 
         public CatogeriesViewHolder(@NonNull View itemView) {
             super(itemView);
             //Hooks
             image = itemView.findViewById(R.id.catogeries_image);
             title = itemView.findViewById(R.id.catogeries_title);
+            desc = itemView.findViewById(R.id.mv_descP);
+
         }
     }
 }

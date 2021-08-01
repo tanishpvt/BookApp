@@ -39,14 +39,14 @@ public class HomeFragment extends Fragment {
         MostViewedRecycler = view.findViewById(R.id.MostViewedRecycler);
         Search = view.findViewById(R.id.Search);
       //  MostViewedRecycler = view.findViewById(R.id.most_viewed_recycler);
-       // CatogeriesRecycler =view.findViewById(R.id.catogeries_recycler);
+        CatogeriesRecycler =view.findViewById(R.id.catogeries_recycler);
 
 
         // receycler view function calls
         MostViewedRecycler();
         featuredRecycler();
         //featuredRecyclerr();
-      //  CatogeriesRecycler();
+        CatogeriesRecycler();
 
         Search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,6 +116,23 @@ public class HomeFragment extends Fragment {
 
         adapter1 = new MostViewedAdpater(mostViewedLocation);
         MostViewedRecycler.setAdapter(adapter1);
+    }
+
+        private void CatogeriesRecycler() {
+        CatogeriesRecycler.setHasFixedSize(true);
+        CatogeriesRecycler.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+
+        ArrayList<CatogeriesHelperClass> catogeriesLocations = new ArrayList<>();
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Restaurant","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Education","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Hospital","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Shopping","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Transport","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+
+        adapter2 = new CatogeriesAdapter(catogeriesLocations);
+        CatogeriesRecycler.setAdapter(adapter2);
+
+        // GradientDrawable gradient1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT,new int[]{0xffeff400,0xffaff600});
     }
 
 }

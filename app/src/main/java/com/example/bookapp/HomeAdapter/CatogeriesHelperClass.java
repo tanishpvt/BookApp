@@ -2,12 +2,14 @@ package com.example.bookapp.HomeAdapter;
 
 public class CatogeriesHelperClass {
 
-    int image;
-    String title;
 
-    public CatogeriesHelperClass(int image, String title) {
+    int image;
+    String title, description;
+
+    public CatogeriesHelperClass(int image, String title, String description) {
         this.image = image;
         this.title = title;
+        this.description = description;
     }
 
     public int getImage() {
@@ -16,5 +18,9 @@ public class CatogeriesHelperClass {
 
     public String getTitle() {
         return title;
+    }
+
+    public  String getDescription() {
+        return description;
     }
 }
