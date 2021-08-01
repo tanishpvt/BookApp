@@ -36,7 +36,7 @@ public class CatogeriesAdapter extends RecyclerView.Adapter<CatogeriesAdapter.Ca
         CatogeriesHelperClass catogeriesHelperClass = catogeriesLocations.get(position);
         holder.image.setImageResource(catogeriesHelperClass.getImage());
         holder.title.setText(catogeriesHelperClass.getTitle());
-        holder.desc.setText(CatogeriesHelperClass.getDescription());
+       // holder.desc.setText(CatogeriesHelperClass.getDescription());
 
 
 
