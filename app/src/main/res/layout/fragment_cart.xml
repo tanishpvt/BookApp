@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/main1"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mv_image"
+                android:layout_width="160dp"
+                android:layout_height="262dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/card_4"/>
+
+            <TextView
+                android:id="@+id/mv_title"
+                android:layout_toRightOf="@+id/mv_image"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="The Gravity of us in the heaven of the earth"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mv_ratingg"
+                android:layout_below="@+id/mv_descc"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/mv_image"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="4.5 ⭐"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/mv_descc"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="by Author Name"
+                android:layout_toRightOf="@+id/mv_image"
+                android:layout_below="@+id/mv_title"/>
+
+
+            <TextView
+                android:id="@+id/mv_pricre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 44.6"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/mv_descc"
+                android:layout_toEndOf="@id/mv_ratingg"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/main1"
+            android:id="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mv_imagee"
+                android:layout_width="160dp"
+                android:layout_height="262dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/card_4"/>
+
+            <TextView
+                android:id="@+id/mv_titlee"
+                android:layout_toRightOf="@+id/mv_imagee"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="The Gravity of us in the heaven of the earth"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mv_rating"
+                android:layout_below="@+id/mv_desc"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/mv_imagee"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="4.5 ⭐"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/mv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="by Author Name"
+                android:layout_toRightOf="@+id/mv_imagee"
+                android:layout_below="@+id/mv_titlee"/>
+
+
+            <TextView
+                android:id="@+id/mv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 44.6"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/mv_desc"
+                android:layout_toEndOf="@id/mv_rating"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main3"
+            android:layout_below="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/id1"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Sub Total "
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/id2"
+                android:layout_toRightOf="@+id/id1"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="₹ 235"
+                android:layout_marginLeft="70dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/main4"
+            android:layout_below="@+id/main3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/id3"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Service Charge "
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/id4"
+                android:layout_toRightOf="@+id/id3"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="₹ 235"
+                android:layout_marginLeft="70dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/main4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/id5"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Total "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/id6"
+                android:layout_toRightOf="@+id/id5"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="₹ 235"
+                android:layout_marginLeft="70dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+
+            <Button
+                android:backgroundTint="@color/signup"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/Nextt"
+                android:layout_below="@+id/id6"
+                android:layout_width="330dp"
+                android:layout_height="65dp"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:drawableEnd="@drawable/ic_arrow_forward_white"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

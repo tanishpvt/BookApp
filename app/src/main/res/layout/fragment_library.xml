@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <RelativeLayout
+            android:id="@+id/SearchFrag"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:elevation="8dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent">
+
+
+
+                <TextView
+                    android:id="@+id/SearchBoooks"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:text="Search Books, Authors" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/SearchFrag"
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_marginLeft="100dp"
+                android:id="@+id/titlebooks"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="ALL"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+            <TextView
+                android:id="@+id/sort"
+                android:layout_toRightOf="@+id/titlebooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOWNLOADED"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RRL"
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:layout_marginTop="135dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/library_recycler"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/RRL"
+        android:id="@+id/RRLL"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/library_recycler2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

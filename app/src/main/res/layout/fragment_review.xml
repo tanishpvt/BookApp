@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.savedFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/base"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/goback"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/featured_image"
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:background="@drawable/card_4"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/featured_title"
+                android:layout_below="@+id/featured_image"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man Tiger"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+
+
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/mv_rating"-->
+            <!--            android:layout_below="@+id/featured_desc"-->
+            <!--            android:layout_width="120dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="4.5 ⭐"-->
+            <!--            android:textColor="@color/black"/>-->
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="70dp"
+                android:id="@+id/featured_desc"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:text="by Eka Kurniawan"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/featured_title"/>
+
+
+            <TextView
+                android:id="@+id/bar"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/featured_desc"
+                android:layout_below="@id/featured_title"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/mv_rating"
+                android:layout_below="@+id/featured_title"
+                android:layout_toRightOf="@+id/bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐⭐⭐⭐⭐"
+                />
+
+            <TextView
+                android:id="@+id/thriller"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Thriller"
+                android:textColor="@color/base"
+                android:textSize="20sp"
+                />
+            <ProgressBar
+                android:id="@+id/p1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/thriller"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:progress="70"
+                style="?android:progressBarStyleHorizontal"
+                android:progressTint="@color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/btnss"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/spam"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_error" />
+
+
+                <Button
+                    android:id="@+id/Read"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/spam"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/base"
+                    android:text="READ"
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/review"
+                    android:layout_toRightOf="@+id/Read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Write review"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_below="@+id/btnss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/yourRating"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Rating"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/mv_ratings"
+                    android:layout_below="@+id/yourRating"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="⭐⭐⭐⭐⭐"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    />
+
+                <Button
+                    android:id="@+id/Next"
+                    android:layout_below="@+id/mv_ratings"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/signup"
+                    android:text="NEXT"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

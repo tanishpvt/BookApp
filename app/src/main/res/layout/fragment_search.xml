@@ -3,173 +3,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.SearchFragment">
-
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@color/banner_background_light">
+        android:layout_height="110dp">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:background="@color/home_background"
-            android:id="@+id/catogeries_recycler"
-            android:layout_height="300dp"
-            android:layout_width="match_parent" />
+            <RelativeLayout
+        android:id="@+id/SearchFrag"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                         android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_back" />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/SearchBoooks"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:text="Search Books, Authors" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+        </RelativeLayout>
+
 
     </RelativeLayout>
 
 
-    <!--    <RelativeLayout-->
-<!--        android:id="@+id/SearchFrag"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_width="match_parent">-->
+
+        <RelativeLayout
+            android:layout_below="@+id/SearchFrag"
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_marginLeft="14dp"
+                android:id="@+id/titlebooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Titles in Fatafat books"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
+            <TextView
+                android:id="@+id/sort"
+                android:paddingLeft="20dp"
+                android:layout_toRightOf="@+id/titlebooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort: Popularity"
+                android:textColor="@color/black"
+                android:textSize="19sp"/>
 
 
-<!--        <ImageView-->
-<!--            android:paddingLeft="20dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:layout_width="45dp"-->
-<!--            android:src="@drawable/ic_arrow_back" />-->
-
-<!--        <RelativeLayout-->
-<!--            android:background="@color/white"-->
-<!--            android:elevation="8dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:layout_marginLeft="70dp"-->
-<!--            android:layout_marginRight="40dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_width="match_parent">-->
-
-
-
-<!--            <TextView-->
-<!--                android:id="@+id/SearchBoooks"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="15dp"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:text="Search Books, Authors" />-->
-
-<!--            <ImageView-->
-<!--                android:layout_alignParentRight="true"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:layout_height="30dp"-->
-<!--                android:layout_marginRight="15dp"-->
-<!--                android:layout_width="30dp"-->
-<!--                android:src="@drawable/ic_baseline_search_24" />-->
-
-<!--        </RelativeLayout>-->
-
-<!--    </RelativeLayout>-->
-
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/filter"-->
-<!--        android:layout_below="@+id/SearchFrag"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="50dp">-->
-
-<!--        <TextView-->
-<!--            android:layout_marginLeft="14dp"-->
-<!--            android:id="@+id/titlebooks"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="3 Titles in Fatafat books"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="19sp"/>-->
-<!--        <TextView-->
-<!--            android:id="@+id/sort"-->
-<!--            android:paddingLeft="20dp"-->
-<!--            android:layout_toRightOf="@+id/titlebooks"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Sort: Popularity"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="19sp"/>-->
-
-
-<!--        <ImageView-->
-<!--            android:layout_alignParentRight="true"-->
-<!--            android:layout_height="30dp"-->
-<!--            android:layout_marginRight="15dp"-->
-<!--            android:layout_width="30dp"-->
-<!--            android:src="@drawable/ic_filter" />-->
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_filter" />
 
 
 
-<!--    </RelativeLayout>-->
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 
-<!--    <RelativeLayout-->
-<!--        android:layout_below="@+id/filter"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="300dp"-->
-<!--        android:padding="10dp">-->
+    <RelativeLayout
+        android:id="@+id/RRL"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/mv_image"-->
-<!--            android:layout_width="160dp"-->
-<!--            android:layout_height="262dp"-->
-<!--            android:scaleType="fitXY"/>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/catogeries_recycler"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/mv_title"-->
-<!--            android:layout_toRightOf="@+id/mv_image"-->
-<!--            android:layout_marginLeft="12dp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="The Gravity of us"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="20sp"/>-->
-
-<!--        &lt;!&ndash;        <RatingBar&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:id="@+id/mv_rating"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_below="@+id/mv_desc"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:rating="3.5"&ndash;&gt;-->
-<!--        &lt;!&ndash;            style="@style/Widget.AppCompat.RatingBar.Small"/>&ndash;&gt;-->
-
-
-<!--        <TextView-->
-<!--            android:id="@+id/mv_rating"-->
-<!--            android:layout_below="@+id/mv_desc"-->
-<!--            android:layout_marginLeft="12dp"-->
-<!--            android:layout_toRightOf="@id/mv_image"-->
-<!--            android:layout_width="120dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="4.5 ⭐"-->
-<!--            android:textSize="22sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textColor="@color/black"/>-->
-
-<!--        <TextView-->
-<!--            android:layout_marginLeft="12dp"-->
-<!--            android:id="@+id/mv_desc"-->
-<!--            android:layout_width="170dp"-->
-<!--            android:layout_height="180dp"-->
-<!--            android:text="by Phil Stamper"-->
-<!--            android:layout_toRightOf="@+id/mv_image"-->
-<!--            android:layout_below="@+id/mv_title"/>-->
-
-
-<!--        <TextView-->
-<!--            android:id="@+id/mv_price"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="₹ 450.0"-->
-<!--            android:textSize="22sp"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textStyle="bold"-->
-<!--            android:layout_below="@id/mv_desc"-->
-<!--            android:layout_toEndOf="@id/mv_rating"/>-->
-
-
-<!--    </RelativeLayout>-->
+    </RelativeLayout>
 
 
 

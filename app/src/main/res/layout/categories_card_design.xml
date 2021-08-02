@@ -2,92 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:id="@+id/SearchFrag"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-
-
-        <ImageView
-            android:paddingLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_height="40dp"
-            android:layout_width="45dp"
-            android:src="@drawable/ic_arrow_back" />
-
-        <RelativeLayout
-            android:background="@color/white"
-            android:elevation="8dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent">
-
-
-
-            <TextView
-                android:id="@+id/SearchBoooks"
-                android:layout_centerVertical="true"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_width="wrap_content"
-                android:text="Search Books, Authors" />
-
-            <ImageView
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_height="30dp"
-                android:layout_marginRight="15dp"
-                android:layout_width="30dp"
-                android:src="@drawable/ic_baseline_search_24" />
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/filter"
-        android:layout_below="@+id/SearchFrag"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp">
-
-        <TextView
-            android:layout_marginLeft="14dp"
-            android:id="@+id/titlebooks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3 Titles in Fatafat books"
-            android:textColor="@color/black"
-            android:textSize="19sp"/>
-        <TextView
-            android:id="@+id/sort"
-            android:paddingLeft="20dp"
-            android:layout_toRightOf="@+id/titlebooks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sort: Popularity"
-            android:textColor="@color/black"
-            android:textSize="19sp"/>
-
-
-        <ImageView
-            android:layout_alignParentRight="true"
-            android:layout_height="30dp"
-            android:layout_marginRight="15dp"
-            android:layout_width="30dp"
-            android:src="@drawable/ic_filter" />
-
-
-
-    </RelativeLayout>
+    android:layout_height="300dp">
 
 
     <RelativeLayout
-        android:layout_below="@+id/filter"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:padding="10dp">

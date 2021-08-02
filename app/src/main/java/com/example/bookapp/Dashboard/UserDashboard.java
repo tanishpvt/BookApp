@@ -5,7 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.example.bookapp.Fragment.CartFragment;
 import com.example.bookapp.Fragment.HomeFragment;
+import com.example.bookapp.Fragment.LibraryFragment;
+import com.example.bookapp.Fragment.savedFragment;
 import com.example.bookapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class UserDashboard extends AppCompatActivity {
@@ -28,7 +32,11 @@ public class UserDashboard extends AppCompatActivity {
     }
 
 
-
+    @Override
+    protected void onStart() {
+        selectedFragment = new HomeFragment();
+        super.onStart();
+    }
 
     private  BottomNavigationView.OnNavigationItemSelectedListener navigationItemReselectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -42,17 +50,19 @@ public class UserDashboard extends AppCompatActivity {
                             break;
 
                         case R.id.nav_library:
-                           // selectedFragment= new SearchFragment();
+                            selectedFragment= new LibraryFragment();
                             break;
 
                         case R.id.nav_saved:
-                       //     selectedFragment=null;
+                            selectedFragment= new savedFragment();
+
+                            //     selectedFragment=null;
                            // startActivity(new Intent(MainActivity2.this,PostActivity.class));
 
                             break;
 
                         case R.id.nav_cart:
-                            //selectedFragment=new NotificationFragment();
+                            selectedFragment=new CartFragment();
                             break;
 
                         case R.id.nav_profile:
