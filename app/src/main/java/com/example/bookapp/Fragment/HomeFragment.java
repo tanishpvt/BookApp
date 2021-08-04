@@ -76,6 +76,10 @@ public class HomeFragment extends Fragment {
         featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
         featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
         featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
+
 
         adapter = new FeaturedAdpater(featuredLocations);
         featuredRecycler.setAdapter(adapter);
@@ -90,6 +94,9 @@ public class HomeFragment extends Fragment {
         ArrayList<MostViewHelperClass> mostViewedLocation = new ArrayList<>();
         mostViewedLocation.add(new MostViewHelperClass(R.drawable.card_4,"Carval","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs. the Homo Sapiens Agenda Cal wants to be a journalist, and he's already well underway with almost half a million followers on his FlashFame app and an upcoming internship at Buzzfeed"));
         mostViewedLocation.add(new MostViewHelperClass(R.drawable.card_4,"Slice of life","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs. the Homo Sapiens Agenda Cal wants to be a journalist, and he's already well underway with almost half a million followers on his FlashFame app and an upcoming internship at Buzzfeed"));
+        mostViewedLocation.add(new MostViewHelperClass(R.drawable.card_4,"Gravity of us","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs. the Homo Sapiens Agenda Cal wants to be a journalist, and he's already well underway with almost half a million followers on his FlashFame app and an upcoming internship at Buzzfeed"));
+        mostViewedLocation.add(new MostViewHelperClass(R.drawable.card_4,"Gravity of us","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs. the Homo Sapiens Agenda Cal wants to be a journalist, and he's already well underway with almost half a million followers on his FlashFame app and an upcoming internship at Buzzfeed"));
+        mostViewedLocation.add(new MostViewHelperClass(R.drawable.card_4,"Gravity of us","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs. the Homo Sapiens Agenda Cal wants to be a journalist, and he's already well underway with almost half a million followers on his FlashFame app and an upcoming internship at Buzzfeed"));
         mostViewedLocation.add(new MostViewHelperClass(R.drawable.card_4,"Gravity of us","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs. the Homo Sapiens Agenda Cal wants to be a journalist, and he's already well underway with almost half a million followers on his FlashFame app and an upcoming internship at Buzzfeed"));
 
         adapter1 = new MostViewedAdpater(mostViewedLocation);

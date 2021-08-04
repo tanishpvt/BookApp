@@ -127,7 +127,7 @@
                     android:background="@color/base">
 
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/featured_recycler"
+                        android:id="@+id/Books_recycler"
                         android:layout_width="match_parent"
                         android:layout_height="190dp"
                         android:background="@color/home_background" />
