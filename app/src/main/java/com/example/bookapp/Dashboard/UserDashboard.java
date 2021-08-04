@@ -3,12 +3,16 @@ package com.example.bookapp.Dashboard;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Bundle;
+import android.text.Html;
 import android.view.MenuItem;
 
 import com.example.bookapp.Fragment.CartFragment;
 import com.example.bookapp.Fragment.HomeFragment;
 import com.example.bookapp.Fragment.LibraryFragment;
+import com.example.bookapp.Fragment.ProfileFragment;
 import com.example.bookapp.Fragment.savedFragment;
 import com.example.bookapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,15 +31,13 @@ public class UserDashboard extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemReselectedListener);
+        // default
+        HomeFragment fragment1 = new HomeFragment();
+        FragmentTransaction ft1=getSupportFragmentManager().beginTransaction();
+        ft1.replace(R.id.fragment_container, fragment1, "");
+        ft1.commit();
 
 
-    }
-
-
-    @Override
-    protected void onStart() {
-        selectedFragment = new HomeFragment();
-        super.onStart();
     }
 
     private  BottomNavigationView.OnNavigationItemSelectedListener navigationItemReselectedListener =
@@ -69,7 +71,7 @@ public class UserDashboard extends AppCompatActivity {
 //                            SharedPreferences.Editor editor= getSharedPreferences("PREFS",MODE_PRIVATE).edit();
 //                            editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
 //                            editor.apply();
-//                            selectedFragment= new ProfileFragment();
+                            selectedFragment= new ProfileFragment();
                             break;
                     }
                     if(selectedFragment !=null){

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SettingFragment">
+
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:src="@drawable/ic_goback" />
+
+    <RelativeLayout
+        android:id="@+id/main7"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:src="@drawable/ic_mobile" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Display"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adaptive Brightness is ON"
+                android:textSize="10sp"
+                />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/main7"
+        android:id="@+id/main8"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/gauthamimg"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_autosave" />
+
+
+        <TextView
+            android:id="@+id/gautham"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="AutoSave"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/gauthamm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto save is ON"
+            android:textSize="10sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/main8"
+        android:id="@+id/main9"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_language" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="Languages"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textSize="10sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/main9"
+        android:id="@+id/main10"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_notification" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="Notifications"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 apps blocked from sending"
+            android:textSize="10sp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/main10"
+        android:id="@+id/main11"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_error" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="Display"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 apps blocked from sending"
+            android:textSize="10sp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -71,4 +71,14 @@ public class LibraryFragment extends Fragment {
         adapter = new LibraryAdapter(Library);
         library_recycler.setAdapter(adapter);
     }
+
+
+
+//    private void setLibraryrecycler(ArrayList<LibraryHelperClass> Library) {
+//        library_recycler.setHasFixedSize(true);
+//        library_recycler.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+//
+//        adapter = new LibraryAdapter(Library);
+//        library_recycler.setAdapter(adapter);
+//    }
 }
