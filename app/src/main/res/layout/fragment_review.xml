@@ -41,7 +41,7 @@
                 android:id="@+id/featured_image"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
-                android:background="@drawable/card_4"
+                android:background="@drawable/card6"
                 android:scaleType="fitXY"/>
 
             <TextView

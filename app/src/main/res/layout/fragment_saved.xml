@@ -41,7 +41,7 @@
                 android:id="@+id/featured_image"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
-                android:background="@drawable/card_4"
+                android:background="@drawable/card6"
                 android:scaleType="fitXY"/>
 
             <TextView
@@ -158,8 +158,24 @@
                     android:text="Write review"
                     android:textAlignment="center"/>
 
+
                 <TextView
-                    android:layout_marginTop="23dp"
+                    android:layout_below="@+id/spam"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textAlignment="center"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/brief"
+                    android:layout_marginTop="39dp"
                     android:layout_below="@+id/review"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

@@ -10,7 +10,7 @@
     <com.smarteist.autoimageslider.SliderView
         android:id="@+id/image_slider"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
         app:sliderAnimationDuration="600"
         app:sliderAutoCycleDirection="back_and_forth"
         app:sliderAutoCycleEnabled="true"
@@ -30,8 +30,8 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/ok"
         android:layout_centerHorizontal="true"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/ok"/>
 
 

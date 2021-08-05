@@ -73,12 +73,12 @@ public class HomeFragment extends Fragment {
         featuredRecycler.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
 
         ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.card_4,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card1,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card1,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card1,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card1,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card1,"by Phil Stamper's","The Gravity of us"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.card1,"by Phil Stamper's","The Gravity of us"));
 
 
         adapter = new FeaturedAdpater(featuredLocations);

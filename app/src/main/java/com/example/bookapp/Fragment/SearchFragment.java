@@ -62,11 +62,11 @@ public class SearchFragment extends Fragment {
         CatogeriesRecycler.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false));
 
         ArrayList<CatogeriesHelperClass> catogeriesLocations = new ArrayList<>();
-        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Man Tiger","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
-        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Milkman","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
-        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Maps for lost lovers","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
-        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Merchant","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
-        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card_4,"Harry Potter","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card5,"Man Tiger","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card5,"Milkman","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card5,"Maps for lost lovers","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card5,"Merchant","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
+        catogeriesLocations.add(new CatogeriesHelperClass(R.drawable.card5,"Harry Potter","I'm so starry-eyed for this wise, romantic gem of a book.Becky Albertalli, bestselling author of Simon vs."));
 
         adapter2 = new CatogeriesAdapter(catogeriesLocations);
         CatogeriesRecycler.setAdapter(adapter2);

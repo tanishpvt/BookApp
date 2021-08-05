@@ -5,6 +5,6 @@
         android:radius="2dp"/>
 
     <solid
-        android:color="@color/card3"/>
+        android:color="#C695A6"/>
 
 </shape>

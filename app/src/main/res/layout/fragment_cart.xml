@@ -4,12 +4,44 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <RelativeLayout
+            android:id="@+id/managerr"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/Searching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="CART"
+                android:textSize="22sp"
+                android:textColor="@color/black" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+        </RelativeLayout>
+
 
         <RelativeLayout
+            android:layout_below="@+id/managerr"
             android:id="@+id/main1"
             android:layout_width="match_parent"
             android:layout_height="305dp"

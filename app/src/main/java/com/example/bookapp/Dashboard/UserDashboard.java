@@ -13,12 +13,15 @@ import com.example.bookapp.Fragment.CartFragment;
 import com.example.bookapp.Fragment.HomeFragment;
 import com.example.bookapp.Fragment.LibraryFragment;
 import com.example.bookapp.Fragment.ProfileFragment;
+import com.example.bookapp.Fragment.ReadFragment;
+import com.example.bookapp.Fragment.ReviewFragment;
 import com.example.bookapp.Fragment.savedFragment;
 import com.example.bookapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class UserDashboard extends AppCompatActivity {
 
 
+  int selectedindex= 0;
 
     BottomNavigationView bottomNavigationView;
     Fragment selectedFragment = null;
@@ -48,16 +51,39 @@ public class UserDashboard extends AppCompatActivity {
 
                     switch (menuItem.getItemId()){
                         case R.id.nav_home:
+                            selectedindex = 0;
                            selectedFragment = new HomeFragment();
                            // startActivity(new Intent(UserDashboard.this,HomeActivity.class));
                             break;
 
                         case R.id.nav_library:
+                            selectedindex = 1;
                             selectedFragment= new LibraryFragment();
                             break;
 
                         case R.id.nav_saved:
-                            selectedFragment= new savedFragment();
+//                            selectedFragment= new savedFragment();
+                            switch (selectedindex){
+                                case 0:
+                                    selectedFragment = new ReadFragment();
+                                    break;
+                                case 1:
+                                    selectedFragment = new savedFragment();
+                                    break;
+
+                                case 2:
+                                    selectedFragment = new savedFragment();
+                                    break;
+
+
+                                case 3:
+                                    selectedFragment = new savedFragment();
+                                    break;
+
+
+
+
+                            }
 
                             //     selectedFragment=null;
                            // startActivity(new Intent(MainActivity2.this,PostActivity.class));
@@ -66,9 +92,13 @@ public class UserDashboard extends AppCompatActivity {
 
                         case R.id.nav_cart:
                             selectedFragment=new CartFragment();
+                            selectedindex = 2;
+
                             break;
 
                         case R.id.nav_profile:
+                            selectedindex = 3;
+
 //                            SharedPreferences.Editor editor= getSharedPreferences("PREFS",MODE_PRIVATE).edit();
 //                            editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
 //                            editor.apply();
